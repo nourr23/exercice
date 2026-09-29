@@ -13,6 +13,7 @@
         "packagesPath": "/Users/nourjouini/.nuget/packages/",
         "outputPath": "/Volumes/mySsd/repo/dotnet exercice/src/ReceptionTracker.Domain/obj/",
         "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [
           "/Users/nourjouini/.nuget/NuGet/NuGet.Config"
         ],
@@ -49,6 +50,13 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
+          "centralPackageVersions": {
+            "coverlet.collector": "6.0.4",
+            "Microsoft.AspNetCore.OpenApi": "10.0.12",
+            "Microsoft.NET.Test.Sdk": "17.14.1",
+            "xunit": "2.9.3",
+            "xunit.runner.visualstudio": "3.1.4"
+          },
           "imports": [
             "net461",
             "net462",
@@ -352,6 +360,7 @@
         "packagesPath": "/Users/nourjouini/.nuget/packages/",
         "outputPath": "/Volumes/mySsd/repo/dotnet exercice/tests/ReceptionTracker.Domain.Tests/obj/",
         "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [
           "/Users/nourjouini/.nuget/NuGet/NuGet.Config"
         ],
@@ -395,20 +404,31 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.14.1, )"
+              "version": "[17.14.1, )",
+              "versionCentrallyManaged": true
             },
             "coverlet.collector": {
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[6.0.4, )",
+              "versionCentrallyManaged": true
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.9.3, )"
+              "version": "[2.9.3, )",
+              "versionCentrallyManaged": true
             },
             "xunit.runner.visualstudio": {
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[3.1.4, )",
+              "versionCentrallyManaged": true
             }
+          },
+          "centralPackageVersions": {
+            "coverlet.collector": "6.0.4",
+            "Microsoft.AspNetCore.OpenApi": "10.0.12",
+            "Microsoft.NET.Test.Sdk": "17.14.1",
+            "xunit": "2.9.3",
+            "xunit.runner.visualstudio": "3.1.4"
           },
           "imports": [
             "net461",

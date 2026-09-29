@@ -147,6 +147,7 @@
       "packagesPath": "/Users/nourjouini/.nuget/packages/",
       "outputPath": "/Volumes/mySsd/repo/dotnet exercice/src/ReceptionTracker.Api/obj/",
       "projectStyle": "PackageReference",
+      "centralPackageVersionsManagementEnabled": true,
       "configFilePaths": [
         "/Users/nourjouini/.nuget/NuGet/NuGet.Config"
       ],
@@ -193,8 +194,16 @@
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[10.0.12, )"
+            "version": "[10.0.12, )",
+            "versionCentrallyManaged": true
           }
+        },
+        "centralPackageVersions": {
+          "coverlet.collector": "6.0.4",
+          "Microsoft.AspNetCore.OpenApi": "10.0.12",
+          "Microsoft.NET.Test.Sdk": "17.14.1",
+          "xunit": "2.9.3",
+          "xunit.runner.visualstudio": "3.1.4"
         },
         "imports": [
           "net461",
