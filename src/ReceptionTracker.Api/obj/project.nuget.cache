@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "qNPWUgUrLjo=",
+  "success": true,
+  "projectFilePath": "/Volumes/mySsd/repo/dotnet exercice/src/ReceptionTracker.Api/ReceptionTracker.Api.csproj",
+  "expectedPackageFiles": [
+    "/Users/nourjouini/.nuget/packages/microsoft.aspnetcore.openapi/10.0.12/microsoft.aspnetcore.openapi.10.0.12.nupkg.sha512",
+    "/Users/nourjouini/.nuget/packages/microsoft.openapi/2.12.0/microsoft.openapi.2.12.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Access to the path '/Users/nourjouini/.local/share' is denied.",
+      "projectPath": "/Volumes/mySsd/repo/dotnet exercice/src/ReceptionTracker.Api/ReceptionTracker.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "/Volumes/mySsd/repo/dotnet exercice/src/ReceptionTracker.Api/ReceptionTracker.Api.csproj",
+      "targetGraphs": []
+    }
+  ]
+}
