@@ -1,0 +1,11 @@
+<Project>
+  <!-- Settings shared by every project in the solution. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <!-- Don't fail the build when the NuGet vulnerability feed is unreachable. -->
+    <WarningsNotAsErrors>NU1900</WarningsNotAsErrors>
+  </PropertyGroup>
+</Project>

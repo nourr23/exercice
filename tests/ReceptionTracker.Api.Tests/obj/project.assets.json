@@ -1092,8 +1092,12 @@
         }
       },
       "warningProperties": {
+        "allWarningsAsErrors": true,
         "warnAsError": [
           "NU1605"
+        ],
+        "warnNotAsError": [
+          "NU1900"
         ]
       },
       "restoreAuditProperties": {
@@ -1418,13 +1422,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Access to the path '/Users/nourjouini/.local/share' is denied."
-    }
-  ]
+  }
 }

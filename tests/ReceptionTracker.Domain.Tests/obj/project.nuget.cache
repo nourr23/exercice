@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eNcVuw27rhE=",
+  "dgSpecHash": "fFZYWoytKVE=",
   "success": true,
   "projectFilePath": "/Volumes/mySsd/repo/dotnet exercice/tests/ReceptionTracker.Domain.Tests/ReceptionTracker.Domain.Tests.csproj",
   "expectedPackageFiles": [
@@ -19,15 +19,5 @@
     "/Users/nourjouini/.nuget/packages/xunit.extensibility.execution/2.9.3/xunit.extensibility.execution.2.9.3.nupkg.sha512",
     "/Users/nourjouini/.nuget/packages/xunit.runner.visualstudio/3.1.4/xunit.runner.visualstudio.3.1.4.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "message": "Error occurred while getting package vulnerability data: Access to the path '/Users/nourjouini/.local/share' is denied.",
-      "projectPath": "/Volumes/mySsd/repo/dotnet exercice/tests/ReceptionTracker.Domain.Tests/ReceptionTracker.Domain.Tests.csproj",
-      "warningLevel": 1,
-      "filePath": "/Volumes/mySsd/repo/dotnet exercice/tests/ReceptionTracker.Domain.Tests/ReceptionTracker.Domain.Tests.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }
