@@ -1,2 +1,12 @@
 <Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ReceptionTracker.Api/ReceptionTracker.Api.csproj" />
+    <Project Path="src/ReceptionTracker.Application/ReceptionTracker.Application.csproj" />
+    <Project Path="src/ReceptionTracker.Domain/ReceptionTracker.Domain.csproj" />
+    <Project Path="src/ReceptionTracker.Infrastructure/ReceptionTracker.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ReceptionTracker.Api.Tests/ReceptionTracker.Api.Tests.csproj" />
+    <Project Path="tests/ReceptionTracker.Domain.Tests/ReceptionTracker.Domain.Tests.csproj" />
+  </Folder>
 </Solution>
