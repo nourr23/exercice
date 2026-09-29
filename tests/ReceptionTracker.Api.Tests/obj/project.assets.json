@@ -8,6 +8,28 @@
           "build/netstandard2.0/coverlet.collector.targets": {}
         }
       },
+      "Microsoft.AspNetCore.OpenApi/10.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "[2.12.0, 3.0.0)"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "build/_._": {}
+        }
+      },
       "Microsoft.CodeCoverage/17.14.1": {
         "type": "package",
         "compile": {
@@ -36,6 +58,19 @@
         "build": {
           "build/net8.0/Microsoft.NET.Test.Sdk.props": {},
           "build/net8.0/Microsoft.NET.Test.Sdk.targets": {}
+        }
+      },
+      "Microsoft.OpenApi/2.12.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.TestPlatform.ObjectModel/17.14.1": {
@@ -393,6 +428,60 @@
         "build": {
           "build/net8.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "ReceptionTracker.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "10.0.12",
+          "ReceptionTracker.Application": "1.0.0",
+          "ReceptionTracker.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ReceptionTracker.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReceptionTracker.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "ReceptionTracker.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "ReceptionTracker.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ReceptionTracker.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReceptionTracker.Application.dll": {}
+        }
+      },
+      "ReceptionTracker.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/ReceptionTracker.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReceptionTracker.Domain.dll": {}
+        }
+      },
+      "ReceptionTracker.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "ReceptionTracker.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ReceptionTracker.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReceptionTracker.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -465,6 +554,24 @@
         "coverlet-icon.png",
         "coverlet.collector.6.0.4.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.OpenApi/10.0.12": {
+      "sha512": "7RnQ/UKn+kK3JDLmTpW+vVqNErWthGPAVAy1aIiBzv4ucQ6g9NFvOJUuT0PHcpvcJxGVxctMxj6t+NESWMrgHQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.openapi/10.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/cs/Microsoft.AspNetCore.OpenApi.SourceGenerators.dll",
+        "build/Microsoft.AspNetCore.OpenApi.targets",
+        "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net10.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.10.0.12.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
     "Microsoft.CodeCoverage/17.14.1": {
@@ -563,6 +670,24 @@
         "lib/net8.0/_._",
         "microsoft.net.test.sdk.17.14.1.nupkg.sha512",
         "microsoft.net.test.sdk.nuspec"
+      ]
+    },
+    "Microsoft.OpenApi/2.12.0": {
+      "sha512": "0xB/be+f6qYOhvQPUrVsLrau+fkowYv6gt9RIkajMhwT7sZnqtcA797yW3bS5kgSje+AQW4xZgyLnW641YFioQ==",
+      "type": "package",
+      "path": "microsoft.openapi/2.12.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net8.0/Microsoft.OpenApi.dll",
+        "lib/net8.0/Microsoft.OpenApi.pdb",
+        "lib/net8.0/Microsoft.OpenApi.xml",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.2.12.0.nupkg.sha512",
+        "microsoft.openapi.nuspec"
       ]
     },
     "Microsoft.TestPlatform.ObjectModel/17.14.1": {
@@ -903,11 +1028,32 @@
         "xunit.runner.visualstudio.3.1.4.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "ReceptionTracker.Api/1.0.0": {
+      "type": "project",
+      "path": "../../src/ReceptionTracker.Api/ReceptionTracker.Api.csproj",
+      "msbuildProject": "../../src/ReceptionTracker.Api/ReceptionTracker.Api.csproj"
+    },
+    "ReceptionTracker.Application/1.0.0": {
+      "type": "project",
+      "path": "../../src/ReceptionTracker.Application/ReceptionTracker.Application.csproj",
+      "msbuildProject": "../../src/ReceptionTracker.Application/ReceptionTracker.Application.csproj"
+    },
+    "ReceptionTracker.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../src/ReceptionTracker.Domain/ReceptionTracker.Domain.csproj",
+      "msbuildProject": "../../src/ReceptionTracker.Domain/ReceptionTracker.Domain.csproj"
+    },
+    "ReceptionTracker.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../src/ReceptionTracker.Infrastructure/ReceptionTracker.Infrastructure.csproj",
+      "msbuildProject": "../../src/ReceptionTracker.Infrastructure/ReceptionTracker.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "Microsoft.NET.Test.Sdk >= 17.14.1",
+      "ReceptionTracker.Api >= 1.0.0",
       "coverlet.collector >= 6.0.4",
       "xunit >= 2.9.3",
       "xunit.runner.visualstudio >= 3.1.4"
@@ -938,7 +1084,11 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Volumes/mySsd/repo/dotnet exercice/src/ReceptionTracker.Api/ReceptionTracker.Api.csproj": {
+              "projectPath": "/Volumes/mySsd/repo/dotnet exercice/src/ReceptionTracker.Api/ReceptionTracker.Api.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

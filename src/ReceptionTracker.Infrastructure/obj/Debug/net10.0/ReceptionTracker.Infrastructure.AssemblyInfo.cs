@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReceptionTracker.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c9c6cb4e8f82c4fd18e212f67d9e10742493e16")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+693413253fafbcb720ce7078ef677f2821a34b0e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReceptionTracker.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReceptionTracker.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

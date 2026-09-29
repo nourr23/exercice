@@ -10,4 +10,9 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.12" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ReceptionTracker.Application\ReceptionTracker.Application.csproj" />
+    <ProjectReference Include="..\ReceptionTracker.Infrastructure\ReceptionTracker.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

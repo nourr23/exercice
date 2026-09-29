@@ -1,11 +1,48 @@
 {
   "version": 4,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "ReceptionTracker.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "ReceptionTracker.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ReceptionTracker.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReceptionTracker.Application.dll": {}
+        }
+      },
+      "ReceptionTracker.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/ReceptionTracker.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReceptionTracker.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ReceptionTracker.Application/1.0.0": {
+      "type": "project",
+      "path": "../ReceptionTracker.Application/ReceptionTracker.Application.csproj",
+      "msbuildProject": "../ReceptionTracker.Application/ReceptionTracker.Application.csproj"
+    },
+    "ReceptionTracker.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ReceptionTracker.Domain/ReceptionTracker.Domain.csproj",
+      "msbuildProject": "../ReceptionTracker.Domain/ReceptionTracker.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "ReceptionTracker.Application >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/nourjouini/.nuget/packages/": {}
@@ -32,7 +69,11 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Volumes/mySsd/repo/dotnet exercice/src/ReceptionTracker.Application/ReceptionTracker.Application.csproj": {
+              "projectPath": "/Volumes/mySsd/repo/dotnet exercice/src/ReceptionTracker.Application/ReceptionTracker.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

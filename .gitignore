@@ -1,0 +1,19 @@
+# .NET build output
+bin/
+obj/
+
+# SQLite database (recreated and seeded at startup)
+*.db
+*.db-shm
+*.db-wal
+
+# IDE and user-specific files
+.vs/
+.idea/
+*.user
+
+# macOS
+.DS_Store
+
+# Claude Code local settings
+.claude/

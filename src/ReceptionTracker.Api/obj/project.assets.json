@@ -36,6 +36,42 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "ReceptionTracker.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "ReceptionTracker.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ReceptionTracker.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReceptionTracker.Application.dll": {}
+        }
+      },
+      "ReceptionTracker.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/ReceptionTracker.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReceptionTracker.Domain.dll": {}
+        }
+      },
+      "ReceptionTracker.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "ReceptionTracker.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ReceptionTracker.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReceptionTracker.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -75,11 +111,28 @@
         "microsoft.openapi.2.12.0.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "ReceptionTracker.Application/1.0.0": {
+      "type": "project",
+      "path": "../ReceptionTracker.Application/ReceptionTracker.Application.csproj",
+      "msbuildProject": "../ReceptionTracker.Application/ReceptionTracker.Application.csproj"
+    },
+    "ReceptionTracker.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ReceptionTracker.Domain/ReceptionTracker.Domain.csproj",
+      "msbuildProject": "../ReceptionTracker.Domain/ReceptionTracker.Domain.csproj"
+    },
+    "ReceptionTracker.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../ReceptionTracker.Infrastructure/ReceptionTracker.Infrastructure.csproj",
+      "msbuildProject": "../ReceptionTracker.Infrastructure/ReceptionTracker.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Microsoft.AspNetCore.OpenApi >= 10.0.12"
+      "Microsoft.AspNetCore.OpenApi >= 10.0.12",
+      "ReceptionTracker.Application >= 1.0.0",
+      "ReceptionTracker.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -107,7 +160,14 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Volumes/mySsd/repo/dotnet exercice/src/ReceptionTracker.Application/ReceptionTracker.Application.csproj": {
+              "projectPath": "/Volumes/mySsd/repo/dotnet exercice/src/ReceptionTracker.Application/ReceptionTracker.Application.csproj"
+            },
+            "/Volumes/mySsd/repo/dotnet exercice/src/ReceptionTracker.Infrastructure/ReceptionTracker.Infrastructure.csproj": {
+              "projectPath": "/Volumes/mySsd/repo/dotnet exercice/src/ReceptionTracker.Infrastructure/ReceptionTracker.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
