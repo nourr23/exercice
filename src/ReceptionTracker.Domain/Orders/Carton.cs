@@ -13,7 +13,6 @@ public class Carton
         Code = null!;
     }
 
-    // Required by EF Core
     public Carton(string code)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(code);

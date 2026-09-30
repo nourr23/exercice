@@ -11,6 +11,14 @@ public class Order
     public int Id { get; private set; }
     public string Reference { get; private set; }
 
+
+    public ReceptionStatus Status => GetProgress().Status;
+
+    private readonly List<Pallet> _pallets = [];
+    public IReadOnlyCollection<Pallet> Pallets => _pallets;
+
+    public IEnumerable<ProductLine> Products => _pallets.SelectMany(p => p.Products);
+
     // Required by EF Core
     private Order() { Reference = null!; }
 
@@ -20,16 +28,12 @@ public class Order
         Reference = reference;
     }
 
-    private readonly List<Pallet> _pallets = [];
-    public IReadOnlyCollection<Pallet> Pallets => _pallets;
-
-    public IEnumerable<ProductLine> Products => _pallets.SelectMany(p => p.Products);
 
     public Pallet AddPallet(string code)
     {
         if (_pallets.Any(p => p.Code == code))
         {
-            throw new DomainException($"Pallet '{code}' already exists on a pallet '{Reference}'.");
+            throw new DomainException($"Pallet '{code}' already exists on a Pallet '{code}'.");
         }
         var pallet = new Pallet(code);
         _pallets.Add(pallet);
