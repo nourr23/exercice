@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReceptionTracker.Api.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f8b4f20f6addce61b24e14b4a980a538e47e4b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b218988be255bee391f9bd7bca1c1e0fd322154")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReceptionTracker.Api.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReceptionTracker.Api.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
